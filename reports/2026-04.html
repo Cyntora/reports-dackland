@@ -3,26 +3,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Däckland - Rapport april 2026</title>
+  <meta name="robots" content="noindex, nofollow">
+  <title>Däckland — Rapport april 2026 | Cyntora</title>
   <link rel="icon" type="image/svg+xml" href="../assets/cyntora-favicon.svg">
   <link rel="apple-touch-icon" href="../assets/cyntora-favicon.svg">
-  <link rel="stylesheet" href="../assets/cyntora-reports.css">
+  <link rel="stylesheet" href="../assets/cyntora-reports-v2.css?v=2658a3de">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap">
+  <style id="client-theme">:root{ --brass:#DE4034; --brass-soft:rgba(222, 64, 52, 0.10); --bg-cream:#FFFFFF; --bg-cream-soft:#F7F7F7; --bg-dark:#0C254A; --bg-dark-soft:#0C1C34; --ink:#222222; --ink-on-dark:#FFFFFF; --ink-muted:#5A6478; --ink-muted-dark:rgba(255, 255, 255, 0.78); --border:#E6E6E6; --border-dark:rgba(255, 255, 255, 0.15); --font-display:"Poppins", Arial, Helvetica, sans-serif; --font-body:"Open Sans", Arial, Helvetica, sans-serif;  }</style>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" defer></script>
-  <script src="../assets/cyntora-charts.js" defer></script>
-  <script src="../assets/cyntora-reports.js" defer></script>
+  <script src="../assets/cyntora-charts.js?v=3039954c" defer></script>
+  <script src="../assets/cyntora-reports.js?v=8b74aa71" defer></script>
 </head>
 <body>
 
 <nav class="report-nav" data-section-nav>
   <div class="report-nav__inner">
-    <div class="report-nav__group">
-      <label for="section-jump">Sektion:</label>
-      <select id="section-jump" data-section-jump>
-        <option value="">Översikt</option>
-      </select>
+    <div class="report-nav__brand">
+      <img src="../assets/cyntora-logo.svg" alt="Cyntora">
+      <div class="divider"></div>
+      <div class="label">Däckland</div>
     </div>
-    <div class="report-nav__group">
-      <label for="period">Period:</label>
+    <div class="report-nav__links" data-section-links></div>
+    <div class="report-nav__dropdown" data-section-dropdown-wrap>
+      <label for="section-jump">Sektion</label>
+      <select id="section-jump" data-section-jump></select>
+    </div>
+    <div class="report-nav__period">
+      <label for="period">Period</label>
       <select id="period" data-period-switcher data-current="2026-04" data-index-url="index.json" disabled>
         <option value="2026-04.html" selected>April 2026</option>
       </select>
@@ -31,35 +41,37 @@
 </nav>
 
 
-<section class="page cover">
-  <img class="logo" src="../assets/cyntora-logo.svg" alt="Cyntora">
-  <h1>Däckland - Rapport</h1>
-  <p class="month">April 2026</p>
-
-
-  <div class="footer">
-<div class="property">Däckland - GA4</div><div class="url">dackland.se</div>  </div>
+<section class="cover" id="cover">
+  <div class="cover__top">
+    <img src="../assets/cyntora-logo-white.svg" alt="Cyntora">
+    <div class="meta">
+      April 2026
+· Rapport    </div>
+  </div>
+  <div class="cover__center">
+    <div class="cover__eyebrow">Cyntora månadsrapport</div>
+    <h1>Däckland</h1>
+      <p class="cover__kicker">April 2026 hade Däckland 628 användare och 808 sessioner på dackland.se, en lätt nedgång jämfört med april 2025 (-5,9 procent på användare, -12,5 procent på sessioner).</p>
+<p class="cover__kicker">Trafiken drivs nästan helt av organisk sökning som står för 83 procent av användarna med en stark engagemangsfrekvens på 67,9 procent och en bouncerate på låga 32 procent. SE Ranking visar 13 av 14 spårade sökord i topp 5 på Google Norrköping, med en synlighet på 77,6 procent och två förbättrade positioner under månaden. Inga konverteringar är registrerade i GA4 för perioden eftersom konverteringsspårning ännu inte är uppsatt.</p>  </div>
+  <div class="cover__bottom">
+    <div class="col">
+      <div class="label">Period</div>
+      <div class="val">April 2026</div>
+    </div>
+    <div class="col">
+      <div class="label">Datakällor</div>
+      <div class="val">GA4, SE Ranking</div>
+    </div>
+    <div class="col">
+      <div class="label">Levererat av</div>
+      <div class="val">Cyntora</div>
+    </div>
+  </div>
 </section>
-<section class="page">
-<div class="page-header">
-  <img class="logo" src="../assets/cyntora-logo.svg" alt="Cyntora">
-  <div class="meta">
-    <div class="client">Däckland</div>
-    <div>April 2026</div>
-  </div>
-</div><div class="summary-block">
-  <h2>Sammanfattning av månaden</h2>
-  <p>April 2026 hade Däckland 628 användare och 808 sessioner på dackland.se, en lätt nedgång jämfört med april 2025 (-5,9 procent på användare, -12,5 procent på sessioner). Trafiken drivs nästan helt av organisk sökning som står för 83 procent av användarna med en stark engagemangsfrekvens på 67,9 procent och en bouncerate på låga 32 procent. SE Ranking visar 13 av 14 spårade sökord i topp 5 på Google Norrköping, med en synlighet på 77,6 procent och två förbättrade positioner under månaden. Inga konverteringar är registrerade i GA4 för perioden eftersom konverteringsspårning ännu inte är uppsatt.</p>
-</div></section>
 
-<section class="page">
-<div class="page-header">
-  <img class="logo" src="../assets/cyntora-logo.svg" alt="Cyntora">
-  <div class="meta">
-    <div class="client">Däckland</div>
-    <div>April 2026</div>
-  </div>
-</div>  <div class="section" id="section-ga4_overview" data-section-id="ga4_overview" data-section-title="Google Analytics 4">
+<section class="page page--paper">
+  <div class="wrap">
+    <div class="section" id="section-ga4_overview" data-section-id="ga4_overview" data-section-title="Google Analytics 4">
   <div class="section-title">
 <img class="section-title__icon" src="../assets/icons/ga4.svg" alt="">    <span>Google Analytics 4</span>
   </div>
@@ -140,11 +152,31 @@
     <span class="right">
 <span class="value">00:03:16</span>    </span>
   </div>
-  <div class="chart-wrap">
+  <div class="chart-wrap chart-wrap--short">
     <canvas id="ga4-eng-3" data-cyntora='{"format": "duration", "kind": "line", "labels": ["1 Apr", "2 Apr", "3 Apr", "4 Apr", "5 Apr", "6 Apr", "7 Apr", "8 Apr", "9 Apr", "10 Apr", "11 Apr", "12 Apr", "13 Apr", "14 Apr", "15 Apr", "16 Apr", "17 Apr", "18 Apr", "19 Apr", "20 Apr", "21 Apr", "22 Apr", "23 Apr", "24 Apr", "25 Apr", "26 Apr", "27 Apr", "28 Apr", "29 Apr", "30 Apr"], "series": [{"color": "#1f4e4a", "label": "April 2026", "values": [57.0, 111.0, 20.5, 76.7, 49.5, 157.3, 199.1, 139.5, 160.1, 111.3, 50.3, 94.0, 90.2, 173.9, 1903.4, 78.0, 88.7, 103.5, 93.9, 166.5, 220.5, 53.5, 87.4, 28.3, 22.5, 59.4, 262.4, 95.7, 221.0, 29.1]}, {"color": "#b9d2cf", "label": "April 2025", "values": [201.5, 246.3, 150.0, 283.4, 270.3, 225.4, 115.9, 76.6, 156.6, 56.5, 43.4, 154.6, 65.8, 163.4, 450.2, 231.9, 67.2, 92.2, 263.6, 48.3, 179.1, 101.8, 218.7, 174.0, 83.1, 136.8, 22.9, 288.8, 118.7, 338.6]}]}'></canvas>
   </div>
 </div></div>
-<div class="card card--note"><div class="card__head"><span class="label"><img src="../assets/icons/ga4.svg" alt="GA4">Conversions</span></div><div class="card__value card__value--big">0</div><div class="card__note">Kanal-attribution för konverteringar saknar data i GA4 för perioden. Detta brukar bero på att inga händelser är flaggade som key event i GA4 admin.</div></div>
+<div class="card-grid"><div class="chart-card">
+  <div class="chart-card__head">
+    <span>New Users</span>
+    <span class="right">
+<span class="value">0</span>    </span>
+  </div>
+  <div class="chart-wrap chart-wrap--short">
+    <canvas id="ga4-new-users-4" data-cyntora='{"format": "number", "integer": true, "kind": "line", "labels": ["1 Apr", "2 Apr", "3 Apr", "4 Apr", "5 Apr", "6 Apr", "7 Apr", "8 Apr", "9 Apr", "10 Apr", "11 Apr", "12 Apr", "13 Apr", "14 Apr", "15 Apr", "16 Apr", "17 Apr", "18 Apr", "19 Apr", "20 Apr", "21 Apr", "22 Apr", "23 Apr", "24 Apr", "25 Apr", "26 Apr", "27 Apr", "28 Apr", "29 Apr", "30 Apr"], "series": [{"color": "#1f4e4a", "label": "April 2026", "values": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}, {"color": "#b9d2cf", "label": "April 2025", "values": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}]}'></canvas>
+  </div>
+</div><div class="chart-card">
+  <div class="chart-card__head">
+    <span>Total Users</span>
+    <span class="right">
+<span class="value">628</span>        <span class="trend trend--down">6%</span>
+    </span>
+  </div>
+  <div class="chart-wrap chart-wrap--short">
+    <canvas id="ga4-total-users-5" data-cyntora='{"format": "number", "integer": true, "kind": "line", "labels": ["1 Apr", "2 Apr", "3 Apr", "4 Apr", "5 Apr", "6 Apr", "7 Apr", "8 Apr", "9 Apr", "10 Apr", "11 Apr", "12 Apr", "13 Apr", "14 Apr", "15 Apr", "16 Apr", "17 Apr", "18 Apr", "19 Apr", "20 Apr", "21 Apr", "22 Apr", "23 Apr", "24 Apr", "25 Apr", "26 Apr", "27 Apr", "28 Apr", "29 Apr", "30 Apr"], "series": [{"color": "#1f4e4a", "label": "April 2026", "values": [26, 33, 19, 11, 10, 27, 46, 49, 44, 36, 14, 21, 54, 54, 30, 28, 23, 12, 14, 25, 23, 20, 13, 12, 10, 12, 21, 15, 10, 12]}, {"color": "#b9d2cf", "label": "April 2025", "values": [39, 37, 38, 36, 22, 31, 54, 50, 36, 31, 30, 24, 26, 67, 37, 22, 24, 13, 4, 6, 20, 28, 24, 17, 13, 12, 7, 24, 19, 9]}]}'></canvas>
+  </div>
+</div></div>
+<div class="card card--note"><div class="card__head"><span class="label"><img src="../assets/icons/ga4.svg" alt="GA4">Conversions</span></div><div class="card__value card__value--big">0</div><div class="card__note">Kanal-attribution för konverteringar saknar data i GA4. Detta brukar bero på att inga händelser är flaggade som key event i GA4 admin.</div></div>
 <div class="band">Pages</div>
 <div class="data-table-wrap">
 <div class="head">Visar 10 av 11 sidor</div>  <table class="data-table">
@@ -341,20 +373,16 @@
 
 
 
-<div class="takeaway">
+<div class="takeaway takeaway--review">
   <div class="takeaway__label">Sammanfattning</div>
   <p class="takeaway__body">Trafiken landade på 628 användare (-5,8 % jämfört med samma månad förra året) med 808 sessioner (-12,5 % jämfört med samma månad förra året). Strukturella mätvärden: bouncenivån på 32,1 % och engagemangsraten på 67,9 %.</p>
 </div>
 </div>
+  </div>
 </section>
 <section class="page">
-<div class="page-header">
-  <img class="logo" src="../assets/cyntora-logo.svg" alt="Cyntora">
-  <div class="meta">
-    <div class="client">Däckland</div>
-    <div>April 2026</div>
-  </div>
-</div>  <div class="section" id="section-seranking" data-section-id="seranking" data-section-title="SE Ranking">
+  <div class="wrap">
+    <div class="section" id="section-seranking" data-section-id="seranking" data-section-title="SE Ranking">
   <div class="section-title">
 <img class="section-title__icon" src="../assets/icons/seranking.png" alt="">    <span>SE Ranking</span>
   </div>
@@ -399,7 +427,7 @@
     </span>
   </div>
   <div class="chart-wrap">
-    <canvas id="ser-trend-4" data-cyntora='{"format": "number", "kind": "line", "labels": ["1 Apr", "2 Apr", "3 Apr", "4 Apr", "5 Apr", "6 Apr", "7 Apr", "8 Apr", "9 Apr", "10 Apr", "11 Apr", "12 Apr", "13 Apr", "14 Apr", "15 Apr", "16 Apr", "17 Apr", "18 Apr", "19 Apr", "20 Apr", "21 Apr", "22 Apr", "23 Apr", "24 Apr", "25 Apr", "26 Apr", "27 Apr", "28 Apr", "29 Apr", "30 Apr"], "series": [{"color": "#1f4e4a", "format": "number", "label": "Avg position", "values": [10.0, 4.0, 3.0, 10.0, 3.0, 4.0, 4.0, 3.0, 3.0, 3.0, 4.0, 4.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 5.0, 3.0, 5.0, 4.0, 4.0, 5.0, 5.0, 5.0, 4.0, 4.0, 4.0]}]}'></canvas>
+    <canvas id="ser-trend-6" data-cyntora='{"format": "number", "kind": "line", "labels": ["1 Apr", "2 Apr", "3 Apr", "4 Apr", "5 Apr", "6 Apr", "7 Apr", "8 Apr", "9 Apr", "10 Apr", "11 Apr", "12 Apr", "13 Apr", "14 Apr", "15 Apr", "16 Apr", "17 Apr", "18 Apr", "19 Apr", "20 Apr", "21 Apr", "22 Apr", "23 Apr", "24 Apr", "25 Apr", "26 Apr", "27 Apr", "28 Apr", "29 Apr", "30 Apr"], "series": [{"color": "#1f4e4a", "format": "number", "label": "Avg position", "values": [10.0, 4.0, 3.0, 10.0, 3.0, 4.0, 4.0, 3.0, 3.0, 3.0, 4.0, 4.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 5.0, 3.0, 5.0, 4.0, 4.0, 5.0, 5.0, 5.0, 4.0, 4.0, 4.0]}]}'></canvas>
   </div>
 </div>
 <div class="data-table-wrap">
@@ -634,36 +662,28 @@
 </div>
 
 
-<div class="takeaway">
+<div class="takeaway takeaway--positive">
   <div class="takeaway__label">Sammanfattning</div>
   <p class="takeaway__body">Av 14 spårade sökord ligger 14 i topp-10, varav 13 i topp-5. Genomsnittspositionen ligger på 4; synlighetsindexet är 77,57 %. 2 sökord klättrade medan 0 backade.</p>
 </div>
 </div>
+  </div>
 </section>
 
-<section class="page">
-<div class="page-header">
-  <img class="logo" src="../assets/cyntora-logo.svg" alt="Cyntora">
-  <div class="meta">
-    <div class="client">Däckland</div>
-    <div>April 2026</div>
+<section class="page page--dark" id="section-next-steps" data-section-id="next-steps" data-section-title="Vad vi gör härnäst">
+  <div class="wrap">
+    <div class="eyebrow">Vad händer härnäst</div>
+    <div class="next-steps">
+      <h2>Vad vi gör härnäst</h2>
+      <ul>
+<li>Vi kommer att sätta upp konverteringsspårning i GA4 för bokningsformulär och telefonklick så att kommande rapporter kan mäta affärsnytta per kanal.</li><li>Vi optimerar /dackbyte och /dackhotell-norrkoping eftersom de driver flest klick efter startsidan - tydligare CTA till bokning bör öka konverteringen.</li><li>Vi följer upp den organiska trafikens nedgång och utvärderar om sökmönstren förändrats jämfört med samma period förra året.</li><li>Vi kommer att utöka nyckelordslistan i SE Ranking med säsongsrelaterade sökord inför maj-juni för att fånga upp efterfrågan på sommardäck.</li>      </ul>
+    </div>
+    <div class="next-steps next-steps--external">
+      <h2>Detta behöver vi från er</h2>
+      <ul>
+<li>Konfigurera GA4 key events (typiskt: formulärinskick, telefonnummer-klick, e-postlänk) och importera dessa till Google Ads så att konverteringar kan attribueras per kanal i kommande rapporter.</li>      </ul>
+    </div>
   </div>
-</div><div class="next-steps">
-  <h2>Vad vi gör härnäst</h2>
-  <ul>
-      <li>Vi kommer att sätta upp konverteringsspårning i GA4 för bokningsformulär och telefonklick så att kommande rapporter kan mäta affärsnytta per kanal.</li>
-      <li>Vi optimerar /dackbyte och /dackhotell-norrkoping eftersom de driver flest klick efter startsidan - tydligare CTA till bokning bör öka konverteringen.</li>
-      <li>Vi följer upp den organiska trafikens nedgång och utvärderar om sökmönstren förändrats jämfört med samma period förra året.</li>
-      <li>Vi kommer att utöka nyckelordslistan i SE Ranking med säsongsrelaterade sökord inför maj-juni för att fånga upp efterfrågan på sommardäck.</li>
-  </ul>
-</div>
-
-<div class="next-steps next-steps--external">
-  <h2>Detta behöver vi från er</h2>
-  <ul>
-      <li>Konfigurera GA4 key events (typiskt: formulärinskick, telefonnummer-klick, e-postlänk) och importera dessa till Google Ads så att konverteringar kan attribueras per kanal i kommande rapporter.</li>
-  </ul>
-</div>
 </section>
 
 
